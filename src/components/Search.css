@@ -1,3 +1,7 @@
 div {
     border: 25px solid black;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    height: 100px;
 }
