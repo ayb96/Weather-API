@@ -1,0 +1,31 @@
+
+.search1{
+    background-color:#788ddb;
+    width: 100%;
+    height: 80px;
+}
+
+.search2{
+
+}
+
+.box{
+    height: 45px;
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 20px;
+    
+
+}
+
+.btn{
+    margin-top: 2px;
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    background-color: #635dc7;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}

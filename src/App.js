@@ -1,32 +1,38 @@
 import React, { Component } from "react";
-import Search from "./components/Search";
+import Weathers from './Component/wehterItem.js';
+import Search from './Component/search.js';
+import Content from './Component/Content.js';
+import fake from './data/fakeWeatherData.json';
 
-import SayHi, { SayHello } from "./components/WeatherItem";
-import fakeWeatherData from "./fakeWeatherData.json";
 
-import "./App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "Hussein"
-    };
+state = {
+  humidity: fake.list[0].main.humidity,
+  tempmin: fake.list[0].main.temp_min,
+  tempmax: fake.list[0].main.temp_max,
+  pressure: fake.list[0].main.pressure,
+  description: fake.list[0].weather[0].description,
+  
+
   }
-
-  handleInputChange = value => {
-    this.setState({ name: value });
-  };
-
-  render() {
-    return (
+  
+   
+render() {
+   return (
+      
       <div className="app">
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
-        <Search handleInput={this.handleInputChange} />
+        
+        <Search />
+        <Weathers pressure={this.state.pressure} description={this.state.description}/>
+        <Content/>
+        
+        
       </div>
+     
     );
   }
 }
+
 
 export default App;

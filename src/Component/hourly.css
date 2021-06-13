@@ -1,0 +1,14 @@
+.hourly1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+}
+
+.img2{
+    width: 150px;
+}

@@ -1,0 +1,27 @@
+
+
+.img1{
+    width: 300px;
+}
+
+.weather1{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.description1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+.description12{
+    margin-bottom: 30px;
+}
+.style1{
+    color: white;
+    position: relative;
+    bottom: 10px;
+}
